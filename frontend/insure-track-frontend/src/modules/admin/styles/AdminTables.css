@@ -1,4 +1,3 @@
-/* Table Page Container */
 .table-container {
     padding: 24px;
 }
@@ -35,7 +34,6 @@
     cursor: pointer;
 }
  
-/* Table Card */
 .table-card {
     background: white;
     border: 1px solid #e5e7eb;
@@ -71,7 +69,6 @@
     outline: none;
 }
  
-/* Real Table Styling */
 .data-table {
     width: 100%;
     border-collapse: collapse;
@@ -98,7 +95,6 @@
     border-bottom: 1px solid #f3f4f6;
 }
  
-/* Status Badges */
 .status-badge {
     padding: 4px 10px;
     border-radius: 9999px;
@@ -151,7 +147,6 @@
 .modal-footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
 .btn-cancel { background: #eee; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; }
 .btn-confirm { background: #4f46e5; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; }
-/* Container and Layout */
 .table-container {
     padding: 2rem;
     background-color: #f8fafc;
@@ -177,7 +172,6 @@
     margin-top: 0.25rem;
 }
  
-/* Add Rule Button */
 .add-btn {
     display: flex;
     align-items: center;
@@ -196,7 +190,6 @@
     background-color: #1d4ed8;
 }
  
-/* Card and Search */
 .table-card {
     background: white;
     border-radius: 0.75rem;
@@ -236,7 +229,6 @@
     border-color: #2563eb;
 }
  
-/* Data Table */
 .data-table {
     width: 100%;
     border-collapse: collapse;
@@ -265,7 +257,6 @@
     background-color: #f8fafc;
 }
  
-/* Status Badges */
 .status-badge {
     padding: 0.25rem 0.625rem;
     border-radius: 9999px;
@@ -274,7 +265,6 @@
     text-transform: capitalize;
 }
  
-/* Modal Styling */
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -358,7 +348,6 @@
     font-weight: 600;
     cursor: pointer;
 }
-/* Container and Layout */
 .table-container {
     padding: 2rem;
     background-color: #f8fafc;
@@ -384,7 +373,6 @@
     margin-top: 0.25rem;
 }
  
-/* Primary Action Button */
 .add-btn {
     display: flex;
     align-items: center;
@@ -404,7 +392,6 @@
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
  
-/* Card and Search Wrapper */
 .table-card {
     background: white;
     border-radius: 0.75rem;
@@ -446,7 +433,6 @@
     border-color: #3b82f6;
 }
  
-/* Data Table Styling */
 .data-table {
     width: 100%;
     border-collapse: collapse;
@@ -475,7 +461,6 @@
     background-color: #fbfcfd;
 }
  
-/* Status Badges */
 .status-badge {
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
@@ -508,7 +493,6 @@
     color: #475569;
 }
  
-/* Modal Styling */
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -594,36 +578,23 @@
     font-weight: 600;
     cursor: pointer;
 }
-/* --- New Role-Based Badge Colors --- */
  
 .role-admin {
-    background-color: #f3e8ff; /* Light purple */
-    color: #9333ea;           /* Dark purple */
 }
  
 .role-manager {
-    background-color: #e0f2fe; /* Light blue */
-    color: #2563eb;           /* Dark blue */
 }
  
 .role-analyst {
-    background-color: #ccfbf1; /* Light teal */
-    color: #0d9488;           /* Dark teal */
 }
  
 .role-customer {
-    background-color: #dcfce7; /* Light green */
-    color: #16a34a;           /* Dark green */
 }
  
 .role-agent {
-    background-color: #fef9c3; /* Light yellow */
-    color: #ca8a04;           /* Dark yellow/orange */
 }
  
 .role-default {
-    background-color: #f1f5f9; /* Light gray */
-    color: #475569;           /* Dark gray */
 }
 .badge-create { background: #dcfce7; color: #16a34a; border: 1px solid #bbf7d0; }
 .badge-update { background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; }
@@ -641,7 +612,6 @@
     font-weight: 600;
     cursor: pointer;
 }
-/* Action Dropdown Styling */
 .action-dropdown {
     position: absolute;
     right: 0;
@@ -681,25 +651,18 @@
 .action-dropdown svg {
     color: #6b7280;
 }
-/* Ensure the container doesn't clip the dropdown */
 .table-card {
     overflow: visible !important;
-    padding-bottom: 50px; /* Gives extra space for the last row's menu */
 }
  
-/* Ensure the table itself allows the menu to pop out */
 .data-table {
-    border-collapse: separate; /* Required for some overflow behaviors */
-}
  
-/* If you want the menu to open UPWARD for the last few rows */
 tr:last-child .action-dropdown,
 tr:nth-last-child(2) .action-dropdown {
     bottom: 100%;
     top: auto;
     margin-bottom: 5px;
 }
-/* Dark Mode Definitions */
 [data-theme='dark'] {
     --bg-color: #0f172a;
     --card-bg: #1e293b;
@@ -719,22 +682,14 @@ tr:nth-last-child(2) .action-dropdown {
 [data-theme='dark'] .sidebar {
     background-color: #020617;
 }
-/* LIGHT THEME VARIABLES (Default) */
 :root {
     --bg-main: #f8fafc;
     --card-bg: #ffffff;
     --text-main: #1e293b;
     --text-muted: #64748b;
-    --sidebar-bg: #1e3a8a; /* Your original blue */
 }
  
-/* DARK THEME VARIABLES (Everything Black) */
 [data-theme='dark'] {
-    --bg-main: #000000;      /* Pure black background */
-    --card-bg: #111111;      /* Deep black cards */
-    --text-main: #ffffff;    /* White text */
-    --text-muted: #94a3b8;   /* Light gray text */
-    --sidebar-bg: #000000;   /* Black sidebar */
 }
 .page-nav-btn, .page-num-btn {
     padding: 6px 12px;

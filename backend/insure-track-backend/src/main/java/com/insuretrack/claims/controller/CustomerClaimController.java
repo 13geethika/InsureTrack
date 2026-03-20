@@ -21,13 +21,10 @@ public class CustomerClaimController {
     private final EvidenceService evidenceService;
     private final ObjectMapper objectMapper;
 
-    @PostMapping(value = "/{id}/evidence", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public EvidenceResponseDTO uploadEvidence(
             @PathVariable Long id,
             @RequestPart("metadata") String metadataJson,
             @RequestPart("file") MultipartFile file) throws Exception {
-
-        // JSON String ni EvidenceRequestDTO object ga marusthunnam
         EvidenceRequestDTO metadata = objectMapper.readValue(metadataJson, EvidenceRequestDTO.class);
         return evidenceService.uploadEvidence(id, metadata, file);
     }

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7d216b7c-350d-471a-8e90-6cb4fc69a61a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/InsureTrackApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/controller/BillingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/dto/InvoiceRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/dto/InvoiceResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/dto/PaymentRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/dto/PaymentResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/dto/RefundRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/dto/RefundResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/entity/Invoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/entity/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/entity/Refund.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/repository/InvoiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/repository/PaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/repository/RefundRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/service/InvoiceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/service/InvoiceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/service/PaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/service/RefundService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/billing/service/RefundServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/controller/ClaimController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/controller/CustomerClaimController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/controller/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/dto/AssignmentRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/dto/AssignmentResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/dto/ClaimRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/dto/ClaimResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/dto/EvidenceRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/dto/EvidenceResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/dto/ReportSummaryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/dto/ReserveRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/dto/ReserveResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/dto/SettlementRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/dto/SettlementResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/entity/Claim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/entity/ClaimAssignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/entity/Evidence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/entity/Reserve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/entity/Settlement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/entity/Subrogation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/repository/ClaimAssignmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/repository/ClaimRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/repository/EvidenceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/repository/ReserveRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/repository/SettlementRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/service/AssignmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/service/AssignmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/service/ClaimService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/service/ClaimServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/service/EvidenceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/service/EvidenceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/service/ReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/service/ReportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/service/ReserveService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/service/ReserveServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/service/SettlementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/claims/service/SettlementServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/CancellationStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/ChangeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/ClaimStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/CoverageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/EndorsementStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/InvoiceStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/NotificationCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/NotificationStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/ObjectType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/PaymentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/PaymentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/PolicyStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/QuoteStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/RefundStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/RenewalStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/ReportStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/Segment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/UnderwritingDecision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/enums/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/common/response/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/config/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/dto/BeneficiaryRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/dto/CustomerRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/dto/CustomerResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/dto/InsuredObjectRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/dto/RiskAssessmentRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/entity/Beneficiary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/entity/InsuredObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/repository/BeneficiaryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/repository/InsuredObjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/customer/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/notification/controller/NotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/notification/dto/NotificationResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/notification/entity/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/notification/repository/NotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/notification/service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/notification/service/NotificationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/controller/CancellationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/controller/EndorsementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/controller/PolicyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/controller/RenewalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/dto/CancellationRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/dto/CancellationResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/dto/EndorsementRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/dto/EndorsementResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/dto/PolicyRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/dto/PolicyResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/dto/RenewalRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/dto/RenewalResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/entity/Cancellation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/entity/Endorsement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/entity/Policy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/entity/Renewal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/repository/CancellationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/repository/EndorsementRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/repository/PolicyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/repository/RenewalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/service/CancellationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/service/CancellationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/service/EndorsementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/service/EndorsementServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/service/PolicyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/service/PolicyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/service/RenewalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/policy/service/RenewalServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/dto/CoverageRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/dto/CoverageResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/dto/ProductRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/dto/ProductResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/dto/RatingRuleRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/dto/RatingRuleResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/entity/Coverage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/entity/RatingRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/repository/CoverageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/repository/RatingRuleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/product/service/RatingRuleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/quote/controller/QuoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/quote/dto/QuoteRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/quote/dto/QuoteResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/quote/entity/Quote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/quote/repository/QuoteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/quote/service/QuoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/quote/service/QuoteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/reporting/controller/RiskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/reporting/dto/RegulatoryReportRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/reporting/dto/RegulatoryReportResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/reporting/dto/RiskMetricResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/reporting/entity/RegulatoryReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/reporting/entity/RiskMetric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/reporting/repository/RegulatoryReportRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/reporting/repository/RiskMetricRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/reporting/service/RegulatoryReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/reporting/service/RegulatoryReportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/reporting/service/RiskMetricService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/reporting/service/RiskMetricServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/underwriting/controller/UnderwritingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/underwriting/dto/UnderwritingDecisionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/underwriting/dto/UnderwritingRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/underwriting/dto/UnderwritingResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/underwriting/entity/UnderwritingCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/underwriting/repository/UnderwritingCaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/underwriting/service/UnderwritingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/underwriting/service/UnderwritingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/dto/AuthResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/dto/LoginRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/dto/UserRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/dto/UserResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/entity/AuditLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/repository/AuditLogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/service/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/java/com/insuretrack/user/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/test/java/com/insuretrack/insure_track_backend/InsureTrackBackendApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/test/java/com/insuretrack/insure_track_backend/billing/InvoiceServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/test/java/com/insuretrack/insure_track_backend/billing/PaymentServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/test/java/com/insuretrack/insure_track_backend/billing/RefundServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/test/java/com/insuretrack/insure_track_backend/customer/CustomerServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/test/java/com/insuretrack/insure_track_backend/product/ProductServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/test/java/com/insuretrack/insure_track_backend/underwriting/UnderwriterServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/test/java/com/insuretrack/insure_track_backend/user/AuthControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/test/java/com/insuretrack/insure_track_backend/user/AuthServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/test/java/com/insuretrack/insure_track_backend/user/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/test/java/com/insuretrack/insure_track_backend/user/UserRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/insure-track-backend/src/test/java/com/insuretrack/insure_track_backend/user/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/components/Dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/components/Navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/services/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/services/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/components/ErrorBoundary.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/components/Layout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/components/StatusBadge.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/hooks/uselsMobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/Assignments.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/ClaimTriage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/Dashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/Evidence.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/FNOLIntake.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/Investigation.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/MyClaims.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/NotificationContext.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/Notifications.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/Reports.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/Reserves.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/Settings.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/adjuster/pages/Settlements.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/admin/components/AddCoverage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/admin/components/AdminDashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/admin/components/AdminLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/admin/components/AdminSettings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/admin/components/AuditLogList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/admin/components/CoverageList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/admin/components/ProductList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/admin/components/RatingRuleList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/admin/components/RegisterUser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/admin/components/UserList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/admin/styles/AdminTables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/admin/styles/Dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/AgentDashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/AgentLayout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/components/AgentNavbar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/components/AgentSidebar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/components/CancellationManagement.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/components/CreateQuoteModal.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/components/DashboardStats.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/components/EndorsementManagement.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/components/PolicyManagement.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/components/QuoteManagement.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/components/RenewalManagement.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/styles/agentLayout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/styles/agentModule.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/agent/styles/modal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/analyst/components/AnalystDashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/analyst/components/BillingDashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/analyst/components/ClaimsDashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/analyst/components/PaymentsDashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/analyst/components/RefundDashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/analyst/components/Sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/analyst/styles/analyst.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/analyst/styles/billing.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/analyst/styles/claims.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/analyst/styles/payment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/analyst/styles/sidebar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/customer/components/CustomerDashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/underwriter/components/Layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/underwriter/pages/Dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/underwriter/pages/Notifications.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/underwriter/pages/Reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/underwriter/pages/RiskAssessment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/underwriter/pages/Settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/underwriter/pages/UnderwriterCases.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/underwriter/styles/underwriter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/components/ForgotPassword.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/components/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/components/Register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/components/ResetPassword.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/DashboardLayout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/user.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Vasudha02-cts&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Vasudha02-cts/Insure_Track.git&quot;,
+    &quot;accountId&quot;: &quot;f4037d69-3e69-4b76-8fb6-06bfa987048b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="39T6nm0KGlvrTc6EaGo0cG6Nmlg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.InsureTrackApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuthServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClaimAssignmentRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClaimControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClaimServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EvidenceServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.InsureTrackBackendApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReserveServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SettlementRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SettlementServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UnderwritingServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/2465939/Downloads/R2dbcApp1/InsureTrackM&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\2465939\Downloads\R2dbcApp1\InsureTrackM\frontend\insure-track-frontend\src\styles" />
+      <recent name="C:\Users\2465976\Downloads\InsureTrack\docs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="insure-track-backend" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d216b7c-350d-471a-8e90-6cb4fc69a61a" name="Changes" comment="" />
+      <created>1770707882695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770707882695</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

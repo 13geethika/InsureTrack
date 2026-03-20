@@ -24,12 +24,12 @@ public class ClaimController {
         return claimService.moveToReview(id);
     }
 
-    @PostMapping("/{id}/assign")
-    public AssignmentResponseDTO assignAdjuster(
-            @PathVariable Long id,
-            @RequestBody AssignmentRequestDTO dto) {
-        return assignmentService.assignAdjuster(id, dto);
-    }
+//    @PostMapping("/{id}/assign")
+//    public AssignmentResponseDTO assignAdjuster(
+//            @PathVariable Long id,
+//            @RequestBody AssignmentRequestDTO dto) {
+//        return assignmentService.assignAdjuster(id, dto);
+//    }
 
     @PostMapping("/{id}/reserve")
     public ReserveResponseDTO createReserve(

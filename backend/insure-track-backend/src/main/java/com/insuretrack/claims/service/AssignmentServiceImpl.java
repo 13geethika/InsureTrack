@@ -27,43 +27,43 @@ public class AssignmentServiceImpl implements AssignmentService {
     private final NotificationService notificationService;
     private final UserRepository userRepository;
 
-    @Override
-    public AssignmentResponseDTO assignAdjuster(Long claimId, AssignmentRequestDTO dto) {
-        Claim claim = claimRepository.findById(claimId)
-                .orElseThrow(() -> new RuntimeException("Claim not found"));
-
-        if (claim.getStatus() != ClaimStatus.INVESTIGATING)
-            throw new RuntimeException("Assignment allowed only in INVESTIGATING stage");
-
-        assignmentRepository.findByClaimClaimId(claimId)
-                .ifPresent(a -> { throw new RuntimeException("Claim already assigned"); });
-
-        // FIX: Fetch actual adjuster User from UserRepository
-        User adjuster = userRepository.findById(dto.getAdjusterId())
-                .orElseThrow(() -> new RuntimeException("Adjuster not found"));
-
-        ClaimAssignment assignment = ClaimAssignment.builder()
-                .claim(claim)
-                .adjuster(adjuster)
-                .priority(dto.getPriority())
-                .assignmentDate(LocalDate.now())
-                .build();
-
-        ClaimAssignment saved = assignmentRepository.save(assignment);
-        notificationService.createNotification(
-                dto.getAdjusterId(),
-                "Claim " + claimId + " has been assigned to you with " + dto.getPriority() + " priority.",
-                NotificationCategory.ASSIGNMENT
-        );
-
-        return AssignmentResponseDTO.builder()
-                .assignmentId(saved.getAssignmentId())
-                .claimId(claimId)
-                .adjusterId(adjuster.getUserId())  // FIX: was returning assignmentId
-                .priority(saved.getPriority())
-                .assignmentDate(saved.getAssignmentDate())
-                .build();
-    }
+//    @Override
+//    public AssignmentResponseDTO assignAdjuster(Long claimId, AssignmentRequestDTO dto) {
+//        Claim claim = claimRepository.findById(claimId)
+//                .orElseThrow(() -> new RuntimeException("Claim not found"));
+//
+//        if (claim.getStatus() != ClaimStatus.INVESTIGATING)
+//            throw new RuntimeException("Assignment allowed only in INVESTIGATING stage");
+//
+//        assignmentRepository.findByClaimClaimId(claimId)
+//                .ifPresent(a -> { throw new RuntimeException("Claim already assigned"); });
+//
+//        // FIX: Fetch actual adjuster User from UserRepository
+//        User adjuster = userRepository.findById(dto.getAdjusterId())
+//                .orElseThrow(() -> new RuntimeException("Adjuster not found"));
+//
+//        ClaimAssignment assignment = ClaimAssignment.builder()
+//                .claim(claim)
+//                .adjuster(adjuster)
+//                .priority(dto.getPriority())
+//                .assignmentDate(LocalDate.now())
+//                .build();
+//
+//        ClaimAssignment saved = assignmentRepository.save(assignment);
+//        notificationService.createNotification(
+//                dto.getAdjusterId(),
+//                "Claim " + claimId + " has been assigned to you with " + dto.getPriority() + " priority.",
+//                NotificationCategory.ASSIGNMENT
+//        );
+//
+//        return AssignmentResponseDTO.builder()
+//                .assignmentId(saved.getAssignmentId())
+//                .claimId(claimId)
+//                .adjusterId(adjuster.getUserId())  // FIX: was returning assignmentId
+//                .priority(saved.getPriority())
+//                .assignmentDate(saved.getAssignmentDate())
+//                .build();
+//    }
 
     @Override
     public AssignmentResponseDTO getByClaimId(Long claimId) {

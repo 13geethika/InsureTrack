@@ -1,7 +1,7 @@
 package com.insuretrack.product.service;
 
 //import com.insuretrack.common.annotation.Auditable;
-import com.insuretrack.common.annotation.Auditable;
+//import com.insuretrack.common.annotation.Auditable;
 import com.insuretrack.common.enums.Status;
 import com.insuretrack.product.dto.*;
 import com.insuretrack.product.entity.Coverage;
@@ -27,7 +27,7 @@ public class ProductServiceImpl implements ProductService {
     private final CoverageRepository coverageRepository;
     private final RatingRuleRepository ratingRuleRepository;
     @Override
-    @Auditable(action = "CREATE_PRODUCT")
+    //@Auditable(action = "CREATE_PRODUCT")
     public ProductResponseDTO createProduct(ProductRequestDTO request) {
         Product product = Product.builder()
                 .name(request.getName())

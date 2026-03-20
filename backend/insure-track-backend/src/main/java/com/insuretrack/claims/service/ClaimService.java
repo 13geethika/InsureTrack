@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface ClaimService {
 
-    ClaimResponseDTO createClaim(ClaimRequestDTO dto);
+   // ClaimResponseDTO createClaim(ClaimRequestDTO dto);
 
     ClaimResponseDTO getClaim(Long claimId);
 

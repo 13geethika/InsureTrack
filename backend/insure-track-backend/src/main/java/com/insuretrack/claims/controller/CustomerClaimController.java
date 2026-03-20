@@ -19,13 +19,13 @@ public class CustomerClaimController {
 
     private final ClaimService claimService;
     private final EvidenceService evidenceService;
-    private final ObjectMapper objectMapper;
+    //private final ObjectMapper objectMapper;
 
-    public EvidenceResponseDTO uploadEvidence(
-            @PathVariable Long id,
-            @RequestPart("metadata") String metadataJson,
-            @RequestPart("file") MultipartFile file) throws Exception {
-        EvidenceRequestDTO metadata = objectMapper.readValue(metadataJson, EvidenceRequestDTO.class);
-        return evidenceService.uploadEvidence(id, metadata, file);
-    }
+//    public EvidenceResponseDTO uploadEvidence(
+//            @PathVariable Long id,
+//            @RequestPart("metadata") String metadataJson,
+//            @RequestPart("file") MultipartFile file) throws Exception {
+//        EvidenceRequestDTO metadata = objectMapper.readValue(metadataJson, EvidenceRequestDTO.class);
+//        return evidenceService.uploadEvidence(id, metadata, file);
+//    }
 }

@@ -34,33 +34,33 @@ public class ClaimServiceImpl implements ClaimService {
     private final PolicyRepository policyRepository;
     private final NotificationService notificationService;
 
-    @Override
-    public ClaimResponseDTO createClaim(ClaimRequestDTO dto) {
-
-        Policy policy = policyRepository.findById(dto.getPolicyId())
-                .orElseThrow(() -> new RuntimeException("Policy not found"));
-
-        Claim claim = Claim.builder()
-                .policy(policy)
-                .incidentDate(dto.getIncidentDate())
-                .reportedDate(LocalDate.now())
-                .claimType(dto.getClaimType())
-                .description(dto.getDescription())
-                .status(ClaimStatus.OPEN)
-                .build();
-
-        claimRepository.save(claim);
-        notificationService.createNotification(
-                policy.getQuote().getCustomer().getCustomerId(),
-                "Claim generated for Policy " + policy.getPolicyNumber(),
-                NotificationCategory.CLAIM);
-        notificationService.createNotification(
-                5L,
-                "New FNOL filed: " + claim.getClaimId() + ". Needs triage.",
-                NotificationCategory.ASSIGNMENT
-        );
-        return mapToResponse(claim);
-    }
+//    @Override
+//    public ClaimResponseDTO createClaim(ClaimRequestDTO dto) {
+//
+//        Policy policy = policyRepository.findById(dto.getPolicyId())
+//                .orElseThrow(() -> new RuntimeException("Policy not found"));
+//
+//        Claim claim = Claim.builder()
+//                .policy(policy)
+//                .incidentDate(dto.getIncidentDate())
+//                .reportedDate(LocalDate.now())
+//                .claimType(dto.getClaimType())
+//                .description(dto.getDescription())
+//                .status(ClaimStatus.OPEN)
+//                .build();
+//
+//        claimRepository.save(claim);
+//        notificationService.createNotification(
+//                policy.getQuote().getCustomer().getCustomerId(),
+//                "Claim generated for Policy " + policy.getPolicyNumber(),
+//                NotificationCategory.CLAIM);
+//        notificationService.createNotification(
+//                5L,
+//                "New FNOL filed: " + claim.getClaimId() + ". Needs triage.",
+//                NotificationCategory.ASSIGNMENT
+//        );
+//        return mapToResponse(claim);
+//    }
 
     @Override
     public ClaimResponseDTO moveToReview(Long id) {

@@ -65,7 +65,7 @@ const Login = () => {
             <div className="info-pane">
                 <div className="brand-badge">InsureTrack</div>
                 <div className="info-content">
-                    <h1>Enterprise Insurance Management System</h1>
+                    {/* <h1>Enterprise Insurance Management System</h1> */}
                     <p>Streamline your insurance operations with our comprehensive platform. Manage policies, claims, and customer relationships all in one place.</p>
                     <div className="hero-image"></div>
                 </div>

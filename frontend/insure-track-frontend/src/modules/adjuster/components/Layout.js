@@ -9,7 +9,7 @@ import { claimsApi } from "../../../core/services/api";
 import DashboardShell from "../../../core/components/DashboardShell";
 
 const NAV = [
-  { path: "", icon: LayoutDashboard, label: "My Dashboard", end: true },
+  { path: "", icon: LayoutDashboard, label: "Dashboard", end: true },
   { path: "fnol", icon: FileText, label: "FNOL Intake" },
   { path: "myclaims", icon: UserCheck, label: "My Claims" },
   { path: "triage", icon: Filter, label: "Claim Triage" },

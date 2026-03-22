@@ -1,6 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
+import PublicLayout from '../../modules/user/components/PublicLayout';
+import AboutUs from '../../modules/user/components/AboutUs';
+import ContactUs from '../../modules/user/components/ContactUs';
+
+import LandingPage from '../components/LandingPage';
 import Login from '../../modules/user/components/Login';
 import Register from '../../modules/user/components/Register';
 // import Dashboard from '../../core/components/Dashboard';
@@ -72,12 +77,16 @@ function AppRoutes() {
         <Router>
             <Routes>
                 {/* Public Routes */}
-                <Route path="/" element={<Navigate to="/login" />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
-                <Route path="/forgot-password" element={<ForgotPassword />} />
-                <Route path="/reset-password" element={<ResetPassword />} />
-                <Route path="/register/user" element={<RegisterUser />} />
+                <Route element={<PublicLayout />}>
+                    <Route path="/" element={<LandingPage />} />
+                    <Route path="/about" element={<AboutUs />} />
+                    <Route path="/contact" element={<ContactUs />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
+                    <Route path="/forgot-password" element={<ForgotPassword />} />
+                    <Route path="/reset-password" element={<ResetPassword />} />
+                    <Route path="/register/user" element={<RegisterUser />} />
+                </Route>
 
                 {/* <Route path="/admin-dashboard" element={token ? <AdminDashboard/> : <Navigate to="/login" />} /> */}
                 <Route path="/customer-dashboard" element={token ? <CustomerDashboard /> : <Navigate to="/login" />} />

@@ -1,0 +1,104 @@
+.public-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.public-navbar.scrolled {
+    padding: 1rem 4rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.navbar-logo {
+    cursor: pointer;
+}
+
+.navbar-logo img {
+    height: 48px;
+    object-fit: contain;
+    transition: height 0.3s ease;
+}
+
+.public-navbar.scrolled .navbar-logo img {
+    height: 40px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    background: none;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #486581;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+    padding: 0.5rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #0052cc;
+    transform: translateY(-2px);
+}
+
+.navbar-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-nav {
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.btn-login {
+    background: transparent;
+    color: #0052cc;
+    border-color: #0052cc;
+}
+
+.btn-login:hover {
+    background: #f0f4f8;
+    transform: translateY(-2px);
+}
+
+.btn-register {
+    background: linear-gradient(135deg, #0052cc 0%, #003e99 100%);
+    color: white;
+    box-shadow: 0 4px 14px 0 rgba(0, 82, 204, 0.39);
+}
+
+.btn-register:hover {
+    background: linear-gradient(135deg, #0060f0 0%, #004ecc 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px 0 rgba(0, 82, 204, 0.23);
+}
+
+@media (max-width: 768px) {
+    .public-navbar {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .public-navbar.scrolled {
+        padding: 0.8rem;
+    }
+}
